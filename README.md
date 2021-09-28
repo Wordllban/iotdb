@@ -14,10 +14,10 @@
 ---
      
 ## v61 
-   Create a relational database schema that allows you to save
-   information about hotel chains in platforms, hotels themselves, reviews,
-   ratings, hotel locations, hotel rooms, free rooms, etc.),
-   hotel rooms and reservation dates, profiles
-   users of the platform, information about blocking funds on
-   user account and send a confirmation of registration
-   by email 
+   Create a relational `database schema` that allows you to save
+   information about `hotel chains in platforms`, `hotels themselves`, `reviews`,
+   `ratings`, `hotel locations`, `hotel rooms`, `free rooms`, etc.),
+   `hotel rooms` and `reservation dates`, `profiles
+   users` of the platform, `information about blocking funds` on
+   user account and send a `confirmation of registration
+   by email` 
