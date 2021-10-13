@@ -1,4 +1,4 @@
-package passive.model.dao.Impl;
+package passive.model.dao.impl;
 
 import passive.model.entities.BookingRecordEntity;
 
