@@ -20,7 +20,7 @@ END //
 DELIMITER ;
 
 
--- 2 завдання для пуськи
+-- 2 
 DROP PROCEDURE IF EXISTS insert_medicine_zone;
 DELIMITER //
 CREATE PROCEDURE insert_medicine_zone(
