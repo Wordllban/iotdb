@@ -1,5 +1,5 @@
 use pharmacy_db;
--- параметризована вставка в співробітники  (для пуськи)
+-- параметризована вставка в співробітники 
 DROP PROCEDURE IF EXISTS insert_into_employee;
 DELIMITER //
 CREATE PROCEDURE insert_into_employee(
