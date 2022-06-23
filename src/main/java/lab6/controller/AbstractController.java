@@ -14,7 +14,7 @@ public abstract class AbstractController<T, DTO, ID> {
   protected abstract AbstractService<T, ID> getService();
   protected abstract AbstractMapper<T, DTO> getMapper();
 
-
+  @CrossOrigin(origins = "https://iwd-iot.pp.ua")
   @RequestMapping(method = RequestMethod.GET)
   public @ResponseBody
   ResponseEntity<List<DTO>> getAll() {
@@ -26,6 +26,7 @@ public abstract class AbstractController<T, DTO, ID> {
     return new ResponseEntity<>(objectsDto, HttpStatus.OK);
   }
 
+  @CrossOrigin(origins = "https://iwd-iot.pp.ua")
   @RequestMapping(method = RequestMethod.GET, value = "/{id}")
   public @ResponseBody
   ResponseEntity<DTO> getById(@PathVariable ID id){
@@ -37,6 +38,7 @@ public abstract class AbstractController<T, DTO, ID> {
     }
   }
 
+  @CrossOrigin(origins = "https://iwd-iot.pp.ua")
   @RequestMapping(method = RequestMethod.POST,
       consumes = {MediaType.APPLICATION_JSON_VALUE})
   public @ResponseBody ResponseEntity<Void> create(@RequestBody T newObject) {
@@ -44,6 +46,7 @@ public abstract class AbstractController<T, DTO, ID> {
     return new ResponseEntity<>(HttpStatus.CREATED);
   }
 
+  @CrossOrigin(origins = "https://iwd-iot.pp.ua")
   @RequestMapping(method = RequestMethod.PUT,
       value = "/{id}",
       consumes = {MediaType.APPLICATION_JSON_VALUE})
@@ -56,6 +59,7 @@ public abstract class AbstractController<T, DTO, ID> {
     }
   }
 
+  @CrossOrigin(origins = "https://iwd-iot.pp.ua")
   @RequestMapping(method = RequestMethod.DELETE,
       value = "/{id}")
   public ResponseEntity<Void> deleteById(@PathVariable ID id) {
