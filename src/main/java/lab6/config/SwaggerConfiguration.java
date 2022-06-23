@@ -34,7 +34,7 @@ public class SwaggerConfiguration {
 
   @Bean
   public Docket decksApi() {
-    return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).pathMapping("/").select()
+    return new Docket(DocumentationType.SWAGGER_2).host("iwd-iot.pp.ua").apiInfo(apiInfo()).pathMapping("/").select()
         .paths(Predicates.not(PathSelectors.regex("/error.*"))).build();
   }
 
