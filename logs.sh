@@ -1,0 +1,1 @@
+docker errors --follow os4_backend --tail 100
